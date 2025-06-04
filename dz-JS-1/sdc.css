@@ -1,0 +1,253 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+.container{
+    height: 500px;
+    max-width: 100%;
+    background-color: #e5f1ff;
+    border: 4px solid #959bc5;
+}
+body{
+    background-color: #e5f1ff;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.number{
+    margin-left: 10px;
+    width: 20px;
+    font-size: 30px;
+    margin-top: 10px;
+
+}
+
+/*1-----------------------------------------------*/
+
+.dz1{
+    background-color: #f8e6ce;
+    display: inline-block;
+    width: 320px;
+    height: 80px;
+    border: 6px solid #9e9e9e;
+    margin-left: 42%;
+    margin-top: 6%;
+
+}
+.label1{
+    display: flex;
+    margin-left: 16px;
+    margin-top: 10px;
+}
+
+.input1{
+    margin-left: 16px;
+    margin-top: 10px;
+    width: 270px;
+
+}
+
+/*2-----------------------------------------------*/
+
+
+.dz2{
+    background-color: #ededed;
+    display: inline-block;
+    width: 360px;
+    height: 140px;
+    border: 6px solid #9e9e9e;
+    margin-left: 40%;
+    margin-top: 6%;
+}
+
+.button2{
+    margin-top: 14px;
+    margin-left: 14px;
+
+}
+
+.label2-rear{
+    display: flex;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+.dz2-rear{
+    background-color: #cdfaff;
+    width: 300px;
+    height: 70px;
+    margin-left: 41.46%;
+    margin-top: 20%;
+    position: fixed;
+
+
+}
+.button2-rear{
+
+    margin-left: 30px;
+    margin-top: 10px;
+    width: 240px;
+}
+
+.background_rear{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    margin-left: 0px;
+    display: none;
+}
+
+/*3-----------------------------------------------*/
+.field {
+    position: relative;
+    width: 100%;
+    height: 430px;
+    background: green;
+    overflow: hidden;
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: top 0.4s ease, left 0.4s ease;
+    box-shadow: 0 0 10px black inset;
+}
+
+/*4-----------------------------------------------*/
+
+.dz4{
+    background-color: #fff6e5;
+    display: flex;
+    width: 360px;
+    height: 120px;
+    border: 6px solid #9e9e9e;
+    margin-left: 40%;
+    margin-top: 6%;
+}
+
+.traffic-light{
+    background-color: #fff6e5;
+    width: 220px;
+    height: 104px;
+    margin-top: 6px;
+    margin-left: 22px;
+    border: 2px solid #9f9f9f;
+    border-radius: 15px;
+    display: inline-block;
+
+}
+
+.button4{
+    margin-left: 10px;
+    margin-top: 6px;
+    display: inline-block;
+    height: 106px;
+    border-radius: 15px;
+    width: 80px;
+    background: #e6e6e6;
+    font-size: 20px;
+    border: 1px solid #cdcccc;
+
+}
+
+#traffic-light-button-1{
+    background: red;
+}
+
+
+.traffic-light-button{
+    background: #9e9e9e;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left: 8px;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+}
+
+/*5-----------------------------------------------*/
+
+.dz5{
+    background-color: #fff6e5;
+    display: inline-block;
+    width: 760px;
+    height: 200px;
+    border: 6px solid #9e9e9e;
+    margin-left: 30%;
+    margin-top: 6%;
+}
+
+
+.spisok{
+    background-color: #fff6e5;
+    margin-top: 10px;
+    margin-left: 1px;
+    display: inline-block;
+
+}
+.spisok > li{
+    font-size: 18px;
+
+}
+/*6-----------------------------------------------*/
+
+#btn-1{
+    margin-left: 720px;
+    margin-top: 1px;
+}
+
+.btn {
+    position: relative;
+    margin-left: 20px;
+    padding: 10px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4a90e2;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    user-select: none;
+}
+
+/* Подсказка */
+.tooltip {
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    width: 150px;
+    padding: 7px 10px;
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 6px;
+    text-align: center;
+    display: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    user-select: none;
+}
+
+.tooltip.top {
+    bottom: 100%;
+    margin-bottom: 8px;
+}
+
+.tooltip.bottom {
+    top: 100%;
+    margin-top: 8px;
+}
+
+.btn:hover .tooltip {
+    display: block;
+}
+
+
+
