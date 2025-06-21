@@ -1,0 +1,50 @@
+
+
+/* ================= LIGHT THEME ================= */
+body.light {
+    background: #f7f5f2;
+    color: #1a1a1a;
+}
+
+body.light .register-container {
+    background: #ffffff;
+    border: 1px solid #e4e4e4;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+}
+
+body.light h1 {
+    color: #333;
+}
+
+body.light form label {
+    color: #444;
+}
+
+body.light form input {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    color: #1a1a1a;
+}
+
+body.light form input:focus {
+    border-color: #f59e0b;
+    box-shadow: 0 0 8px rgba(255, 193, 7, 0.3);
+}
+
+body.light button {
+    background: #facc15;
+    color: #000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+body.light button:hover {
+    background: #eab308;
+}
+
+body.light .switch-link {
+    color: #666;
+}
+
+body.light .switch-link a {
+    color: #f97316;
+}

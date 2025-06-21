@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e0f0f3;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.register-container {
+    z-index: 1;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 40px;
+    border-radius: 18px;
+    max-width: 420px;
+    width: 100%;
+    transition: opacity 0.5s ease;
+    position: relative;
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 26px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus {
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.01);
+}
+
+
+#formMessage {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #ff9494;
+}
+
+.switch-link {
+    text-align: center;
+    margin-top: 14px;
+    color: #a6b1c3;
+    font-size: 14px;
+}
+
+.switch-link a {
+    color: #c4d7f2;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.switch-link a:hover {
+    color: #ffffff;
+}
+
+
+.register-container.hidden {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+}
+
+
+
+
+
+
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 60px;
+    height: 34px;
+}
+
+.theme-toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 34px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: .4s;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196f3;
+}
+
+input:checked + .slider::before {
+    transform: translateX(26px);
+}

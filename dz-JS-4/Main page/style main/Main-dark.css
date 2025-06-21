@@ -1,0 +1,102 @@
+body.dark {
+    background: linear-gradient(145deg, #0a0f1a, #1a1f2f);
+    color: #e0f0f3;
+}
+
+body.dark .Menu-and-search {
+    background-color: #1a2030;
+}
+
+body.dark .search-bar {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+}
+
+body.dark .search-bar svg {
+    fill: #c4d7f2;
+}
+
+body.dark .search-bar input[type="text"] {
+    color: #e0f7fa;
+    background: none;
+}
+
+body.dark .search-bar input[type="text"]::placeholder {
+    color: #a6b1c3;
+}
+
+body.dark .search-bar button {
+    background: linear-gradient(145deg, #1e293b, #111827);
+    color: #f1f5f9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+body.dark .search-bar button:hover {
+    background: linear-gradient(145deg, #2c3e50, #1a2534);
+}
+
+body.dark .user-profile {
+    background: rgba(255, 255, 255, 0.03);
+    color: #e0f0f3;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+}
+
+body.dark .user-profile .avatar {
+    background: #565d93;
+    color: #fff;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+body.dark .user-name {
+    color: #f0f4f7;
+}
+
+body.dark .user-email {
+    color: #a6b1c3;
+}
+
+body.dark .genre-menu {
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+}
+
+body.dark .genre-menu button {
+    background: linear-gradient(145deg, #1e293b, #111827);
+    color: #f1f5f9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+body.dark .genre-menu button:hover {
+    background: linear-gradient(145deg, #2c3e50, #1a2534);
+    transform: translateY(-8px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+}
+
+body.dark .Foto img {
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark .Foto img:hover {
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
+    transform: scale(1.08);
+}
+
+/* Плавный переход для картинок */
+.Foto img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+body.dark .carousel {
+    border: 3px solid #464e9e;
+}
+
+
+body.dark footer {
+    background: #1e293b;
+}
+
+body.dark .footer-link:hover {
+    color: #565d93;
+}

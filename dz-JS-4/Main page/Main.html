@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Main.css" />
+    <link rel="stylesheet" href="./style%20main/Main-lite.css" />
+    <link rel="stylesheet" href="./style%20main/Main-dark.css" />
+    <script type="module" src="Menu-and-search.js" defer></script>
+</head>
+<body>
+
+<div class="Menu-and-search">
+     <!--    Логорип я с инета взял -->
+    <svg class="logo"  xmlns="http://www.w3.org/2000/svg">
+
+        <rect x="14" y="16" width="48" height="36" rx="10" fill="#3B63E3"/>
+
+        <circle cx="38" cy="34" r="9" fill="#F6F8FC"/>
+        <ellipse cx="38" cy="36" rx="15" ry="4" fill="none" stroke="#7E9EF5" stroke-width="2"/>
+
+        <circle cx="28" cy="26" r="2" fill="#7E9EF5"/>
+
+        <circle cx="52" cy="28" r="1.1" fill="#F6F8FC"/>
+        <circle cx="23" cy="45" r="0.9" fill="#F6F8FC"/>
+
+        <text x="75" y="48" font-family="Montserrat, Arial, sans-serif" font-weight="bold"
+              font-size="36" fill="#3B63E3" letter-spacing="1.6">Pictu
+            <tspan fill="#7E9EF5">verse</tspan>
+        </text>
+    </svg>
+
+    <div class="search-bar">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <circle cx="10" cy="10" r="8" stroke="#3B63E3" stroke-width="2" />
+            <line x1="16.2" y1="16.7" x2="21" y2="21" stroke="#3B63E3" stroke-width="2" stroke-linecap="round" />
+        </svg>
+        <input type="text" placeholder="Search assets or start creating" />
+        <button>Search</button>
+    </div>
+
+
+    <div class="user-profile">
+        <div class="avatar">👤</div>
+        <div class="user-info">
+            <div class="user-name" id="userName">Рауль</div>
+            <div class="user-email" id="userEmail">raul@example.com</div>
+        </div>
+    </div>
+
+
+    <label class="theme-toggle">
+        <input type="checkbox" id="themeToggle">
+        <span class="slider"></span>
+    </label>
+    
+
+</div>
+
+
+
+<div class="genre-menu">
+    <button data-genre="all" class="active">Все</button>
+    <button data-genre="portrait">Портрет</button>
+    <button data-genre="landscape">Пейзаж</button>
+    <button data-genre="street">Уличная</button>
+    <button data-genre="macro">Макро</button>
+    <button data-genre="architecture">Архитектура</button>
+    <button data-genre="wildlife">Животные</button>
+    <button data-genre="transport">Транспорт</button>
+    <button data-genre="abstract">Абстракция</button>
+    <button data-genre="night">Ночная</button>
+</div>
+
+<div class="Foto">
+
+
+
+    <div class="carousel-div" data-genre="carousel">
+        <div class="carousel">
+            <div class="slide active" ><img src="https://picsum.photos/id/1040/400/300"></div>
+            <div class="slide" ><img src="https://picsum.photos/id/1041/400/300"></div>
+            <div class="slide" ><img src="https://picsum.photos/id/1042/400/300"></div>
+        </div>
+
+        <div class="carousel">
+            <div class="slide active" ><img src="https://picsum.photos/id/1011/400/300"></div>
+            <div class="slide" ><img src="https://picsum.photos/id/1012/400/300"></div>
+            <div class="slide" ><img src="https://picsum.photos/id/1013/400/300"></div>
+        </div>
+
+        <div class="carousel">
+            <div class="slide active" ><img src="https://picsum.photos/id/1014/400/300"></div>
+            <div class="slide" ><img src="https://picsum.photos/id/1015/400/300"></div>
+            <div class="slide" ><img src="https://picsum.photos/id/1016/400/300"></div>
+        </div>
+    </div>
+    <img src="https://picsum.photos/id/1000/400/300" data-genre="street" alt="Фото 1" />
+    <img src="https://picsum.photos/id/1001/400/300" data-genre="portrait" alt="Фото 2" />
+    <img src="https://picsum.photos/id/1002/400/300" data-genre="abstract" alt="Фото 3" />
+    <img src="https://picsum.photos/id/1003/400/300" data-genre="abstract" alt="Фото 4" />
+    <img src="https://picsum.photos/id/1004/400/300" data-genre="night" alt="Фото 5" />
+    <img src="https://picsum.photos/id/1005/400/300" data-genre="night" alt="Фото 6" />
+    <img src="https://picsum.photos/id/1006/400/300" data-genre="street" alt="Фото 7" />
+    <img src="https://picsum.photos/id/1028/400/300" data-genre="portrait" alt="Фото 8" />
+    <img src="https://picsum.photos/id/1008/400/300" data-genre="portrait" alt="Фото 9" />
+    <img src="https://picsum.photos/id/1009/400/300" data-genre="landscape" alt="Фото 10" />
+    <img src="https://picsum.photos/id/1010/400/300" data-genre="landscape" alt="Фото 11" />
+    <img src="https://picsum.photos/id/1011/400/300" data-genre="abstract" alt="Фото 12" />
+    <img src="https://picsum.photos/id/1012/400/300" data-genre="street" alt="Фото 13" />
+    <img src="https://picsum.photos/id/1013/400/300" data-genre="night" alt="Фото 14" />
+    <img src="https://picsum.photos/id/1014/400/300" data-genre="landscape" alt="Фото 15" />
+    <img src="https://picsum.photos/id/1015/400/300" data-genre="wildlife" alt="Фото 16" />
+    <img src="https://picsum.photos/id/1016/400/300" data-genre="street" alt="Фото 17" />
+    <img src="https://picsum.photos/id/1018/400/300" data-genre="night" alt="Фото 19" />
+    <img src="https://picsum.photos/id/1019/400/300" data-genre="portrait" alt="Фото 20" />
+    <img src="https://picsum.photos/id/1020/400/300" data-genre="abstract" alt="Фото 21" />
+    <img src="https://picsum.photos/id/1021/400/300" data-genre="night" alt="Фото 22" />
+    <img src="https://picsum.photos/id/1022/400/300" data-genre="architecture" alt="Фото 23" />
+    <img src="https://picsum.photos/id/1023/400/300" data-genre="architecture" alt="Фото 24" />
+    <img src="https://picsum.photos/id/1024/400/300" data-genre="macro" alt="Фото 25" />
+    <img src="https://picsum.photos/id/1025/400/300" data-genre="portrait" alt="Фото 26" />
+    <img src="https://picsum.photos/id/1026/400/300" data-genre="architecture" alt="Фото 27" />
+    <img src="https://picsum.photos/id/1027/400/300" data-genre="wildlife" alt="Фото 28" />
+    <img src="https://picsum.photos/id/1028/400/300" data-genre="macro" alt="Фото 29" />
+    <img src="https://picsum.photos/id/1029/400/300" data-genre="abstract" alt="Фото 30" />
+    <img src="https://picsum.photos/id/1031/400/300" data-genre="portrait" alt="Фото 32" />
+    <img src="https://picsum.photos/id/1032/400/300" data-genre="architecture" alt="Фото 33" />
+    <img src="https://picsum.photos/id/1033/400/300" data-genre="street" alt="Фото 34" />
+    <img src="https://picsum.photos/id/1035/400/300" data-genre="abstract" alt="Фото 36" />
+    <img src="https://picsum.photos/id/1036/400/300" data-genre="wildlife" alt="Фото 37" />
+    <img src="https://picsum.photos/id/1037/400/300" data-genre="architecture" alt="Фото 38" />
+    <img src="https://picsum.photos/id/1038/400/300" data-genre="landscape" alt="Фото 39" />
+    <img src="https://picsum.photos/id/1039/400/300" data-genre="night" alt="Фото 40" />
+    <img src="https://picsum.photos/id/1040/400/300" data-genre="wildlife" alt="Фото 41" />
+    <img src="https://picsum.photos/id/1041/400/300" data-genre="macro" alt="Фото 42" />
+    <img src="https://picsum.photos/id/1042/400/300" data-genre="transport" alt="Фото 43" />
+    <img src="https://picsum.photos/id/1043/400/300" data-genre="portrait" alt="Фото 44" />
+    <img src="https://picsum.photos/id/1044/400/300" data-genre="abstract" alt="Фото 45" />
+
+    <div class="carousel-div" data-genre="carousel">
+        <div class="carousel">
+            <div class="slide active" ><img src="https://picsum.photos/id/1070/400/300"></div>
+            <div class="slide" ><img src="https://picsum.photos/id/1061/400/300"></div>
+            <div class="slide" ><img src="https://picsum.photos/id/1022/400/300"></div>
+        </div>
+
+        <div class="carousel">
+            <div class="slide active" ><img src="https://picsum.photos/id/1060/400/300"></div>
+            <div class="slide" ><img src="https://picsum.photos/id/1071/400/300"></div>
+            <div class="slide" ><img src="https://picsum.photos/id/1037/400/300"></div>
+        </div>
+
+        <div class="carousel">
+            <div class="slide active" ><img src="https://picsum.photos/id/1044/400/300"></div>
+            <div class="slide" ><img src="https://picsum.photos/id/1049/400/300"></div>
+            <div class="slide" ><img src="https://picsum.photos/id/1051/400/300"></div>
+        </div>
+    </div>
+
+    <img src="https://picsum.photos/id/1045/400/300" data-genre="macro" alt="Фото 46" />
+    <img src="https://picsum.photos/id/1047/400/300" data-genre="macro" alt="Фото 48" />
+    <img src="https://picsum.photos/id/1048/400/300" data-genre="landscape" alt="Фото 49" />
+    <img src="https://picsum.photos/id/1049/400/300" data-genre="landscape" alt="Фото 50" />
+    <img src="https://picsum.photos/id/1050/400/300" data-genre="landscape" alt="Фото 51" />
+    <img src="https://picsum.photos/id/1051/400/300" data-genre="portrait" alt="Фото 52" />
+    <img src="https://picsum.photos/id/1052/400/300" data-genre="macro" alt="Фото 53" />
+    <img src="https://picsum.photos/id/1053/400/300" data-genre="wildlife" alt="Фото 54" />
+    <img src="https://picsum.photos/id/1054/400/300" data-genre="wildlife" alt="Фото 55" />
+    <img src="https://picsum.photos/id/1055/400/300" data-genre="transport" alt="Фото 56" />
+    <img src="https://picsum.photos/id/1056/400/300" data-genre="transport" alt="Фото 57" />
+    <img src="https://picsum.photos/id/1057/400/300" data-genre="wildlife" alt="Фото 58" />
+    <img src="https://picsum.photos/id/1058/400/300" data-genre="wildlife" alt="Фото 59" />
+    <img src="https://picsum.photos/id/1059/400/300" data-genre="landscape" alt="Фото 60" />
+    <img src="https://picsum.photos/id/1060/400/300" data-genre="abstract" alt="Фото 61" />
+    <img src="https://picsum.photos/id/1061/400/300" data-genre="transport" alt="Фото 62" />
+    <img src="https://picsum.photos/id/1062/400/300" data-genre="wildlife" alt="Фото 63" />
+    <img src="https://picsum.photos/id/1063/400/300" data-genre="architecture" alt="Фото 64" />
+    <img src="https://picsum.photos/id/1064/400/300" data-genre="macro" alt="Фото 65" />
+    <img src="https://picsum.photos/id/1065/400/300" data-genre="transport" alt="Фото 66" />
+    <img src="https://picsum.photos/id/1066/400/300" data-genre="transport" alt="Фото 67" />
+    <img src="https://picsum.photos/id/1067/400/300" data-genre="landscape" alt="Фото 68" />
+    <img src="https://picsum.photos/id/1068/400/300" data-genre="street" alt="Фото 69" />
+    <img src="https://picsum.photos/id/1069/400/300" data-genre="wildlife" alt="Фото 70" />
+    <img src="https://picsum.photos/id/1070/400/300" data-genre="architecture" alt="Фото 71" />
+    <img src="https://picsum.photos/id/1071/400/300" data-genre="architecture" alt="Фото 72" />
+    <img src="https://picsum.photos/id/1072/400/300" data-genre="wildlife" alt="Фото 73" />
+    <img src="https://picsum.photos/id/1073/400/300" data-genre="macro" alt="Фото 74" />
+    <img src="https://picsum.photos/id/1074/400/300" data-genre="abstract" alt="Фото 75" />
+    <img src="https://picsum.photos/id/1075/400/300" data-genre="portrait" alt="Фото 76" />
+    <img src="https://picsum.photos/id/1076/400/300" data-genre="night" alt="Фото 77" />
+    <img src="https://picsum.photos/id/1077/400/300" data-genre="wildlife" alt="Фото 78" />
+    <img src="https://picsum.photos/id/1078/400/300" data-genre="street" alt="Фото 79" />
+    <img src="https://picsum.photos/id/1079/400/300" data-genre="portrait" alt="Фото 80" />
+    <img src="https://picsum.photos/id/1080/400/300" data-genre="abstract" alt="Фото 81" />
+    <img src="https://picsum.photos/id/1081/400/300" data-genre="night" alt="Фото 82" />
+    <img src="https://picsum.photos/id/1082/400/300" data-genre="transport" alt="Фото 83" />
+    <img src="https://picsum.photos/id/1083/400/300" data-genre="abstract" alt="Фото 84" />
+    <img src="https://picsum.photos/id/1084/400/300" data-genre="architecture" alt="Фото 85" />
+
+
+
+
+</div>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-columns">
+            <div class="footer-col">
+                <div class="footer-col-title">ИНФОРМАЦИЯ</div>
+                <a href="#" class="footer-link">Цены</a>
+                <a href="#" class="footer-link">О нас</a>
+                <a href="#" class="footer-link">API</a>
+                <a href="#" class="footer-link">Вакансии</a>
+                <a href="#" class="footer-link">Продавать контент</a>
+                <a href="#" class="footer-link">Гайд по бренду</a>
+                <a href="#" class="footer-link">События</a>
+                <a href="#" class="footer-link">Тренды поиска</a>
+                <a href="#" class="footer-link">Блог</a>
+
+
+            </div>
+            <div class="footer-col">
+
+
+                <div class="footer-col-title">ПРАВО</div>
+                <a href="#" class="footer-link">Условия использования</a>
+                <a href="#" class="footer-link">Лицензионное соглашение</a>
+                <a href="#" class="footer-link">Политика конфиденциальности</a>
+                <a href="#" class="footer-link">Информация об авторских правах</a>
+                <a href="#" class="footer-link">Политика использования файлов cookie</a>
+                <a href="#" class="footer-link">Настройки cookie</a>
+
+            </div>
+
+            <div class="footer-col">
+                <div class="footer-col-title">ПОДДЕРЖКА</div>
+                <a href="#" class="footer-link">Документация по AI Suite</a>
+                <a href="#" class="footer-link">Вопросы и ответы</a>
+                <a href="#" class="footer-link">Контакты</a>
+            </div>
+
+            <div class="footer-col">
+                <div class="footer-col-title">СОЦИАЛЬНЫЕ СЕТИ</div>
+                <a href="#" class="footer-link">Facebook</a>
+                <a href="#" class="footer-link">Twitter</a>
+                <a href="#" class="footer-link">Pinterest</a>
+                <a href="#" class="footer-link">Instagram</a>
+                <a href="#" class="footer-link">Youtube</a>
+                <a href="#" class="footer-link">LinkedIn</a>
+                <a href="#" class="footer-link">Discord</a>
+                <a href="#" class="footer-link">Reddit</a>
+            </div>
+
+
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-logo-group">
+                <span>© 2025-2030 Pictu verse R.A. Все права защищены.</span>
+            </div>
+        </div>
+        <div class="footer-projects">
+            <a href="#" class="footer-project-link">Проекты Freepik Company</a>
+            <a href="#" class="footer-project-link">Freepik</a>
+            <a href="#" class="footer-project-link">Slidesgo</a>
+            <a href="#" class="footer-project-link">Magnific</a>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+</body>
+</html>

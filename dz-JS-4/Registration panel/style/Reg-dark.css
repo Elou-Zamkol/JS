@@ -1,0 +1,47 @@
+body.dark {
+    background: linear-gradient(145deg, #0a0f1a, #1a1f2f);
+    color: #e0f0f3;
+}
+
+body.dark .register-container {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+}
+
+body.dark h1 {
+    color: #f0f4f7;
+}
+
+body.dark form label {
+    color: #b0c4cc;
+}
+
+body.dark form input {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #e0f7fa;
+}
+
+body.dark form input:focus {
+    border-color: #a0c8ff;
+    box-shadow: 0 0 8px rgba(160, 200, 255, 0.4);
+}
+
+body.dark button {
+    background: linear-gradient(145deg, #1e293b, #111827);
+    color: #f1f5f9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+body.dark button:hover {
+    background: linear-gradient(145deg, #2c3e50, #1a2534);
+}
+
+body.dark .switch-link {
+    color: #a6b1c3;
+}
+
+body.dark .switch-link a {
+    color: #c4d7f2;
+}

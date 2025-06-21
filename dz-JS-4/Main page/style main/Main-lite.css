@@ -1,0 +1,101 @@
+body.light {
+    background: #f7f5f2;
+    color: #1a1a1a;
+}
+
+body.light .Menu-and-search {
+    background-color: #e0e0e0;
+}
+
+body.light .search-bar {
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 8px rgba(60, 70, 130, 0.06);
+}
+
+body.light .search-bar svg {
+    fill: #ffffff; /* синий основной */
+}
+
+body.light .search-bar input[type="text"] {
+    color: #1a1a1a;
+    background: none;
+}
+
+body.light .search-bar input[type="text"]::placeholder {
+    color: #666;
+}
+
+body.light .search-bar button {
+    background: #facc15; /* желтый акцент */
+    color: #000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+body.light .search-bar button:hover {
+    background: #eab308;
+}
+
+body.light .user-profile {
+    background: #fff;
+    color: #333;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+}
+
+body.light .user-profile .avatar {
+    background: #565d93;
+    color: #fff;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+body.light .user-name {
+    color: #1a1a1a;
+}
+
+body.light .user-email {
+    color: #666;
+}
+
+body.light .genre-menu {
+    background: #f5f7fb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+body.light .genre-menu button {
+    background: linear-gradient(145deg, #eab308, #facc15);
+    color: #000000;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+body.light .genre-menu button:hover {
+    background: linear-gradient(145deg, #eab308, #facc15);
+    transform: translateY(-8px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+body.light .Foto img {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+body.light .Foto img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transform: scale(1.08);
+}
+
+/* Плавный переход для картинок */
+.Foto img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+body.light .carousel {
+    border: 3px solid #eab308;
+}
+
+body.light footer {
+    background: #565d93;
+}
+
+body.light .footer-link:hover {
+    color: #facc15;
+}
