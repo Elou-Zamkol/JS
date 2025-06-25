@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Погода</title>
+    <link rel="stylesheet" href="Weather.css" />
+    <link rel="stylesheet" href="../User-page.css" />
+    <link rel="stylesheet" href="../../Notifications/Exsepts.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script type="module" src="Weather.js" defer></script>
+</head>
+<body>
+
+
+<div id="loader" class="loader-wrapper hidden">
+    <div class="loader"></div>
+</div>
+
+<div id="notification" class="notification hidden"></div>
+
+<div class="Menu-and-search">
+    <!--    Логорип я с инета взял -->
+    <svg class="logo" xmlns="http://www.w3.org/2000/svg"  aria-label="Peaks of Mountain Services Logo" role="img">
+        <!-- Основные горы -->
+        <polygon points="30,70 60,20 90,70" fill="#6b8e23" />
+        <polygon points="80,70 110,35 140,70" fill="#5e8fe0" />
+        <polygon points="130,70 160,25 190,70" fill="#456fae" />
+
+        <!-- Снежные вершины -->
+        <polygon points="53,30 60,20 67,30" fill="#dde5cd" />
+        <polygon points="105,40 110,35 115,40" fill="#dde5cd" />
+        <polygon points="155,30 160,25 165,30" fill="#dde5cd" />
+
+        <!-- Текст -->
+        <text x="200" y="45" font-family="Montserrat, Arial, sans-serif" font-weight="700" font-size="18" fill="#6b8e23" letter-spacing="0.8" style="user-select:none;">
+            Peaks of Mountain
+        </text>
+        <text x="200" y="70" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="16" fill="#456fae" letter-spacing="0.6" style="user-select:none;">
+            Services
+        </text>
+    </svg>
+
+
+    <div class="search-bar">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <circle cx="10" cy="10" r="8" stroke="#3B63E3" stroke-width="2" />
+            <line x1="16.2" y1="16.7" x2="21" y2="21" stroke="#3B63E3" stroke-width="2" stroke-linecap="round" />
+        </svg>
+        <input type="text" id="cityInput" placeholder="Введите город" />
+        <button id="getWeatherBtn" >Search</button>
+    </div>
+
+
+
+    <div class="user-profile">
+        <div class="avatar"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAsklEQVR4nO2UMQrCQBBFXyGeIoKN5BpWOYSl1/ACXsErhCXHsPIgARFMEGwCI4FJE+Jm3YxF0A+v2eJ9lpld+JWsAAfUSgGklvIbID3as8SiwA3IO3KLgtpTUFkUyAhfvcHdoqDwFLTzmZzUs0UbjJLoxlSKs5TPPzvgMTCDJ7CfIl4Ax4B3cAKWMUM9B8g7LsA6VL4Fyg/kolyBbEx+AJoIuSiNOt4mViyh/9P8C/6hnxeIiKoDbhI+ogAAAABJRU5ErkJggg==" alt="user"></div>
+        <div class="user-info">
+            <div class="user-name" id="userName">Рауль</div>
+            <div class="user-email" id="userEmail">raul@example.com</div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+<button class="Exit" id="Previous-page"><-- Exit</button>
+
+<div id="currentWeather" class="weather-result" style="display: none;"></div>
+
+<canvas id="tempChart" style="max-height: 460px; width: 1500px"></canvas>
+
+
+
+<table class="weather-table" id="forecastTable">
+    <thead>
+    <tr>
+        <th>Дата</th>
+        <th>Температура (°C)</th>
+        <th>Погода</th>
+        <th>Иконка</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+
+
+
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-columns">
+            <div class="footer-col">
+                <div class="footer-col-title">ИНФОРМАЦИЯ</div>
+                <a href="#" class="footer-link">Цены</a>
+                <a href="#" class="footer-link">О нас</a>
+                <a href="#" class="footer-link">API</a>
+                <a href="#" class="footer-link">Вакансии</a>
+                <a href="#" class="footer-link">Продавать контент</a>
+                <a href="#" class="footer-link">Гайд по бренду</a>
+                <a href="#" class="footer-link">События</a>
+                <a href="#" class="footer-link">Тренды поиска</a>
+                <a href="#" class="footer-link">Блог</a>
+
+
+            </div>
+            <div class="footer-col">
+
+
+                <div class="footer-col-title">ПРАВО</div>
+                <a href="#" class="footer-link">Условия использования</a>
+                <a href="#" class="footer-link">Лицензионное соглашение</a>
+                <a href="#" class="footer-link">Политика конфиденциальности</a>
+                <a href="#" class="footer-link">Информация об авторских правах</a>
+                <a href="#" class="footer-link">Политика использования файлов cookie</a>
+                <a href="#" class="footer-link">Настройки cookie</a>
+
+            </div>
+
+            <div class="footer-col">
+                <div class="footer-col-title">ПОДДЕРЖКА</div>
+                <a href="#" class="footer-link">Документация по AI Suite</a>
+                <a href="#" class="footer-link">Вопросы и ответы</a>
+                <a href="#" class="footer-link">Контакты</a>
+            </div>
+
+            <div class="footer-col">
+                <div class="footer-col-title">СОЦИАЛЬНЫЕ СЕТИ</div>
+                <a href="#" class="footer-link">Facebook</a>
+                <a href="#" class="footer-link">Twitter</a>
+                <a href="#" class="footer-link">Pinterest</a>
+                <a href="#" class="footer-link">Instagram</a>
+                <a href="#" class="footer-link">Youtube</a>
+                <a href="#" class="footer-link">LinkedIn</a>
+                <a href="#" class="footer-link">Discord</a>
+                <a href="#" class="footer-link">Reddit</a>
+            </div>
+
+
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-logo-group">
+                <span>© 2024-2025 Peaks of Mountain Services R.A. Все права защищены.</span>
+            </div>
+        </div>
+        <div class="footer-projects">
+            <a href="#" class="footer-project-link">Проекты Freepik Company</a>
+            <a href="#" class="footer-project-link">Freepik</a>
+            <a href="#" class="footer-project-link">Slidesgo</a>
+            <a href="#" class="footer-project-link">Magnific</a>
+        </div>
+    </div>
+</footer>
+
+
+
+</body>
+</html>

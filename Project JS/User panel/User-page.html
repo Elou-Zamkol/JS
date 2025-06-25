@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User page</title>
+    <link rel="stylesheet" href="User-page.css" />
+    <script type="module" src="User-page.js" defer></script>
+    
+</head>
+<body>
+
+
+
+<div class="Menu-and-search">
+    <!--    Логорип я с инета взял -->
+    <svg class="logo" xmlns="http://www.w3.org/2000/svg"  aria-label="Peaks of Mountain Services Logo" role="img">
+        <!-- Основные горы -->
+        <polygon points="30,70 60,20 90,70" fill="#6b8e23" />
+        <polygon points="80,70 110,35 140,70" fill="#5e8fe0" />
+        <polygon points="130,70 160,25 190,70" fill="#456fae" />
+
+        <!-- Снежные вершины -->
+        <polygon points="53,30 60,20 67,30" fill="#dde5cd" />
+        <polygon points="105,40 110,35 115,40" fill="#dde5cd" />
+        <polygon points="155,30 160,25 165,30" fill="#dde5cd" />
+
+        <!-- Текст -->
+        <text x="200" y="45" font-family="Montserrat, Arial, sans-serif" font-weight="700" font-size="18" fill="#6b8e23" letter-spacing="0.8" style="user-select:none;">
+            Peaks of Mountain
+        </text>
+        <text x="200" y="70" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="16" fill="#456fae" letter-spacing="0.6" style="user-select:none;">
+            Services
+        </text>
+    </svg>
+
+
+    <div class="user-profile">
+        <div class="avatar"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAsklEQVR4nO2UMQrCQBBFXyGeIoKN5BpWOYSl1/ACXsErhCXHsPIgARFMEGwCI4FJE+Jm3YxF0A+v2eJ9lpld+JWsAAfUSgGklvIbID3as8SiwA3IO3KLgtpTUFkUyAhfvcHdoqDwFLTzmZzUs0UbjJLoxlSKs5TPPzvgMTCDJ7CfIl4Ax4B3cAKWMUM9B8g7LsA6VL4Fyg/kolyBbEx+AJoIuSiNOt4mViyh/9P8C/6hnxeIiKoDbhI+ogAAAABJRU5ErkJggg==" alt="user"></div>
+        <div class="user-info">
+            <div class="user-name" id="userName">Рауль</div>
+            <div class="user-email" id="userEmail">raul@example.com</div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+<div class="genre-menu">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAABw0lEQVR4nO3XTaiMURzH8c9FkrKRtwVdJSnZWIwdVrKysJCwsJFSbCysSFa2YmVhY2EhSt1ko5TdzUt2XpK3hQUpC3Hp3nv01H/09HTHjOZ5U8+3fjXnnOnMd86c/3PO0NHRUTvrMaHF3MMBLWUfEl5iiZaxFK8wG5JHtYwzIXYCb/AupFvBGnzFUyzGsZxsK7gWQruinUm+wEcsb9jNdszhRqH/cEif1iATeIjvmCyMLcIzfMaKhvz0V+n8gPH9MX5WA2R76wPe/2WfZSv8KApoZc1+LsTqHMn1rcL9WNk+e+N9F+uUm4x9lzCNddiC19E3j3Oxgiej/Q1rqxJaXWjfDJEUyX7mL4W+FEWSb1+qQi771p+wJ9q7FxBJI+YHNpQteCUmn4nLwOMxBBOulim3ET9zk8+NKZfwC5vKErxeglBaINm8Y7Mtd3UqO7PYOq7gnYrkUuRW7rOyy8U/sSOeXVUKzqMXZ/ZUXNlG5kHFcilyF6fi9eVR5fpHU12ZyVX35mFy2dH0pGbBlMvtYYIHG5RLkZ2D5LJKet4CwelBf/yPt0AuRQ4V5ZbF5TO1JG/D6Q+9OMTblN6wguno6PAf8BsYt8x7bsnOsAAAAABJRU5ErkJggg==" alt="mountain">
+    <button data-genre="all" class="active">Все</button>
+    <button id="Weather" data-genre="portrait">Прогноз погоды</button>
+    <button id="movies" data-genre="street">Поиск и просмотр фильмов</button>
+    <button id="News" data-genre="landscape">Новости</button>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAABw0lEQVR4nO3XTaiMURzH8c9FkrKRtwVdJSnZWIwdVrKysJCwsJFSbCysSFa2YmVhY2EhSt1ko5TdzUt2XpK3hQUpC3Hp3nv01H/09HTHjOZ5U8+3fjXnnOnMd86c/3PO0NHRUTvrMaHF3MMBLWUfEl5iiZaxFK8wG5JHtYwzIXYCb/AupFvBGnzFUyzGsZxsK7gWQruinUm+wEcsb9jNdszhRqH/cEif1iATeIjvmCyMLcIzfMaKhvz0V+n8gPH9MX5WA2R76wPe/2WfZSv8KApoZc1+LsTqHMn1rcL9WNk+e+N9F+uUm4x9lzCNddiC19E3j3Oxgiej/Q1rqxJaXWjfDJEUyX7mL4W+FEWSb1+qQi771p+wJ9q7FxBJI+YHNpQteCUmn4nLwOMxBBOulim3ET9zk8+NKZfwC5vKErxeglBaINm8Y7Mtd3UqO7PYOq7gnYrkUuRW7rOyy8U/sSOeXVUKzqMXZ/ZUXNlG5kHFcilyF6fi9eVR5fpHU12ZyVX35mFy2dH0pGbBlMvtYYIHG5RLkZ2D5LJKet4CwelBf/yPt0AuRQ4V5ZbF5TO1JG/D6Q+9OMTblN6wguno6PAf8BsYt8x7bsnOsAAAAABJRU5ErkJggg==" alt="mountain">
+
+</div>
+
+
+
+<section class="welcome-section">
+    <h1>Приветвствую вас</h1>
+    <p>Добро пожаловать на Peaks of Mountain Services.</p>
+    <p>Используйте меню сверху, чтобы выбрать интересующий раздел:</p>
+    <ul>
+        <li><strong>Прогноз погоды</strong> — узнавайте актуальный прогноз по городам.</li>
+        <li><strong>Поиск и просмотр фильмов</strong> — находите фильмы, смотрите постеры и подробности.</li>
+        <li><strong>Новости</strong> — свежие события и обновления.</li>
+    </ul>
+
+    <h2>Инструкция по погоде</h2>
+    <p>Для прогноза погоды любого города вам не обходима вести названия города в верхней понели и нажмите кнопку «Search»</p>
+    <p>По умолчанию там стоит город Баку</p>
+
+    <h2>Инструкция по поиску фильмов</h2>
+    <p>Для поиска фильмов введите название в строку поиска и нажмите кнопку «Search».</p>
+    <p>Нажимайте на понравившийся фильм, чтобы увидеть подробную информацию.</p>
+    <p>Предупреждение чтобы вы могли найти фильм вам не обходимо написать название на Англиском языке</p>
+    <p>В худшем случаи он не найдет фильм</p>
+
+    <h2>Инструкция по разделу новости</h2>
+    <p></p>
+    <p></p>
+
+</section>
+
+
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-columns">
+            <div class="footer-col">
+                <div class="footer-col-title">ИНФОРМАЦИЯ</div>
+                <a href="#" class="footer-link">Цены</a>
+                <a href="#" class="footer-link">О нас</a>
+                <a href="#" class="footer-link">API</a>
+                <a href="#" class="footer-link">Вакансии</a>
+                <a href="#" class="footer-link">Продавать контент</a>
+                <a href="#" class="footer-link">Гайд по бренду</a>
+                <a href="#" class="footer-link">События</a>
+                <a href="#" class="footer-link">Тренды поиска</a>
+                <a href="#" class="footer-link">Блог</a>
+
+
+            </div>
+            <div class="footer-col">
+
+
+                <div class="footer-col-title">ПРАВО</div>
+                <a href="#" class="footer-link">Условия использования</a>
+                <a href="#" class="footer-link">Лицензионное соглашение</a>
+                <a href="#" class="footer-link">Политика конфиденциальности</a>
+                <a href="#" class="footer-link">Информация об авторских правах</a>
+                <a href="#" class="footer-link">Политика использования файлов cookie</a>
+                <a href="#" class="footer-link">Настройки cookie</a>
+
+            </div>
+
+            <div class="footer-col">
+                <div class="footer-col-title">ПОДДЕРЖКА</div>
+                <a href="#" class="footer-link">Документация по AI Suite</a>
+                <a href="#" class="footer-link">Вопросы и ответы</a>
+                <a href="#" class="footer-link">Контакты</a>
+            </div>
+
+            <div class="footer-col">
+                <div class="footer-col-title">СОЦИАЛЬНЫЕ СЕТИ</div>
+                <a href="#" class="footer-link">Facebook</a>
+                <a href="#" class="footer-link">Twitter</a>
+                <a href="#" class="footer-link">Pinterest</a>
+                <a href="#" class="footer-link">Instagram</a>
+                <a href="#" class="footer-link">Youtube</a>
+                <a href="#" class="footer-link">LinkedIn</a>
+                <a href="#" class="footer-link">Discord</a>
+                <a href="#" class="footer-link">Reddit</a>
+            </div>
+
+
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-logo-group">
+                <span>© 2024-2025 Peaks of Mountain Services R.A. Все права защищены.</span>
+            </div>
+        </div>
+        <div class="footer-projects">
+            <a href="#" class="footer-project-link">Проекты Freepik Company</a>
+            <a href="#" class="footer-project-link">Freepik</a>
+            <a href="#" class="footer-project-link">Slidesgo</a>
+            <a href="#" class="footer-project-link">Magnific</a>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

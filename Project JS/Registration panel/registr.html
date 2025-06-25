@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="registr.css" />
+    <link rel="stylesheet" href="../Notifications/Exsepts.css" />
+    <script type="module" src="interface.js" defer></script>
+    <script type="module" src="registr.js" defer></script>
+
+</head>
+<body>
+<div id="notification" class="notification hidden"></div>
+
+<div class="main-wrapper" id="main-wrapper">
+    <div class="side-panel" id="side-panel">
+        <h2>Добро пожаловать!</h2>
+        <p>Зарегистрируйтесь, чтобы получить доступ к уникальному контенту и возможностям.</p>
+    </div>
+
+    <div class="forms-wrapper" id="forms-wrapper">
+        <!-- Форма входа -->
+        <div class="register-container" id="loginFormContainer">
+            <h1>Вход</h1>
+            <form id="loginForm" novalidate method="post" autocomplete="off">
+                <label for="loginEmail">Email</label>
+                <input type="email" id="loginEmail" name="loginEmail" placeholder="Введите email" required />
+
+                <label for="loginPassword">Пароль</label>
+                <input type="password" id="loginPassword" name="loginPassword" placeholder="Введите пароль" required />
+
+                <button type="submit" id="buttonEntrance">Войти</button>
+
+                <p id="loginMessage"></p>
+                <p class="switch-link">Нет аккаунта? <a href="#" id="toRegister">Зарегистрироваться</a></p>
+            </form>
+        </div>
+
+        <!-- Форма регистрации -->
+        <div class="register-container hidden" id="registerFormContainer">
+            <h1>Регистрация</h1>
+            <form id="registerForm">
+                <label for="registerUsername">Имя пользователя</label>
+                <input type="text" id="registerUsername" name="registerUsername" placeholder="Введите имя" required />
+
+                <label for="registerEmail">Email</label>
+                <input type="email" id="registerEmail" name="registerEmail" placeholder="Введите email" required />
+
+                <label for="registerPassword">Пароль</label>
+                <input type="password" id="registerPassword" name="registerPassword" placeholder="Введите пароль" required />
+
+                <label for="confirmPassword">Подтвердите пароль</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Подтвердите пароль" required />
+
+                <button type="submit" id="buttonRegister">Зарегистрироваться</button>
+                <p id="registerMessage"></p>
+                <p class="switch-link">Уже есть аккаунт? <a href="#" id="toLogin">Войти</a></p>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+
+
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ff4444;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    font-family: sans-serif;
+    z-index: 9999;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+
+}
+
+.notification.show {
+    opacity: 0.8;
+    transform: translateY(0);
+}
